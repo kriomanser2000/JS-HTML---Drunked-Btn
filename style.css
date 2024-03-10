@@ -6,13 +6,14 @@ body
     align-items: center;
     height: 100vh;
 }
-.tooltip {
+.tooltip 
+{
     position: relative;
     display: inline-block;
     margin: 10px;
 }
-
-.tooltip .tooltiptext {
+.tooltip .tooltiptext 
+{
     visibility: hidden;
     width: 120px;
     background-color: #333;
@@ -22,19 +23,19 @@ body
     padding: 5px;
     position: absolute;
     z-index: 1;
-    top: -30px; /* Відстань від кнопки вверх */
-    left: 50%; /* Позиція по центру відносно кнопки */
+    top: -30px;
+    left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s;
 }
-
-.btn1 {
+.btn1 
+{
     position: absolute;
     bottom: 100px;
 }
-
-.tooltip .tooltiptext::after {
+.tooltip .tooltiptext::after 
+{
     content: "";
     position: absolute;
     top: 100%;
@@ -44,18 +45,20 @@ body
     border-style: solid;
     border-color: #333 transparent transparent transparent;
 }
-
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext 
+{
     visibility: visible;
     opacity: 1;
 }
-
-@media (max-width: 500px) {
-    .tooltip .tooltiptext {
+@media (max-width: 500px) 
+{
+    .tooltip .tooltiptext 
+    {
         bottom: auto;
         top: 125%;
     }
-    .tooltip .tooltiptext::after {
+    .tooltip .tooltiptext::after 
+    {
         top: -10px;
         bottom: auto;
         border-color: transparent transparent #333 transparent;
